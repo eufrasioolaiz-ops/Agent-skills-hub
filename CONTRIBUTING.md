@@ -2,10 +2,26 @@
 
 欢迎向本仓库添加新的智能体 Skill。
 
+## 一级分类
+
+新技能必须放在一个一级分类目录下：
+
+```text
+Lark/skill-name/
+Office/skill-name/
+Data/skill-name/
+App/skill-name/
+```
+
+- `Lark/`：飞书相关技能。
+- `Office/`：日常办公技能。
+- `Data/`：数据分析技能。
+- `App/`：场景应用技能。
+
 ## 新技能最小要求
 
 ```text
-skill-name/
+Category/skill-name/
 ├── SKILL.md
 └── agents/openai.yaml
 ```
@@ -13,7 +29,7 @@ skill-name/
 如技能需要代码、资料或模板，再添加：
 
 ```text
-skill-name/
+Category/skill-name/
 ├── scripts/
 ├── references/
 ├── assets/
