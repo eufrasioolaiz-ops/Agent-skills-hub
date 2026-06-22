@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Local Performance BI"
+  short_description: "Create a local PC performance floating BI"
+  default_prompt: "Use $build-local-performance-bi to create a local desktop performance monitor BI widget."

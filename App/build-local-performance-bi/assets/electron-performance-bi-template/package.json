@@ -1,0 +1,22 @@
+{
+  "name": "floating-performance-bi",
+  "version": "1.0.0",
+  "description": "Local floating performance monitor BI widget",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "check": "node --check src/main.js && node --check src/preload.js && node --check src/renderer.js && node --check src/metrics.js"
+  },
+  "keywords": [
+    "electron",
+    "performance",
+    "desktop-widget",
+    "bi"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^37.4.0"
+  }
+}

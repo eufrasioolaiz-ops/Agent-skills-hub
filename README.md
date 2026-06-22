@@ -25,12 +25,18 @@ Agent-skills-hub/
 │       ├── references/
 │       └── requirements.txt
 └── App/
-    └── chemical-safety/
+    ├── chemical-safety/
+    │   ├── SKILL.md
+    │   ├── agents/openai.yaml
+    │   ├── references/
+    │   ├── assets/
+    │   └── requirements.txt
+    └── build-local-performance-bi/
         ├── SKILL.md
         ├── agents/openai.yaml
+        ├── scripts/
         ├── references/
-        ├── assets/
-        └── requirements.txt
+        └── assets/
 ```
 
 ## 一级分类
@@ -67,6 +73,7 @@ Agent-skills-hub/
 | `Lark/` | `feishu-ops` | 飞书消息、日程、任务、文档等协作事务的处理流程 |
 | `Data/` | `data-analysis-playbook` | 数据分析任务拆解、CSV 画像、报告产出规范 |
 | `App/` | `chemical-safety` | 化工安全生产检查、隐患闭环和方案辅助 |
+| `App/` | `build-local-performance-bi` | 本地 Windows 电脑性能 BI 小浮窗生成与调试 |
 
 ## 新增技能流程
 
@@ -76,4 +83,3 @@ Agent-skills-hub/
 4. 按需添加 `scripts/`、`references/`、`assets/` 和依赖文件。
 5. 确认技能名称、触发描述和资源引用准确。
 6. 提交前运行基础检查，例如 Markdown 检查、脚本语法检查或 Skill 校验脚本。
-
