@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lark CLI Tutorial"
+  short_description: "Guide agents to install and use lark-cli"
+  default_prompt: "Use $lark-cli-tutorial to set up and use Feishu CLI safely."
