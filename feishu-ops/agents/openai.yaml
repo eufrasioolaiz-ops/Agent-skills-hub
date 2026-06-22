@@ -1,0 +1,5 @@
+interface:
+  display_name: "Feishu Ops"
+  short_description: "Feishu collaboration workflow support"
+  default_prompt: "Use $feishu-ops to process a Feishu operations request."
+

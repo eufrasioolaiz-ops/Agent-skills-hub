@@ -1,0 +1,5 @@
+interface:
+  display_name: "Chemical Safety"
+  short_description: "Chemical safety inspection workflow aid"
+  default_prompt: "Use $chemical-safety to prepare a chemical safety checklist."
+

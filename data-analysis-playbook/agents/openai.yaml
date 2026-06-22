@@ -1,0 +1,5 @@
+interface:
+  display_name: "Data Analysis Playbook"
+  short_description: "Repeatable data analysis and report guide"
+  default_prompt: "Use $data-analysis-playbook to analyze an operational dataset."
+
