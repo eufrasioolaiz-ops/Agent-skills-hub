@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lark OpenClaw Tutorial"
+  short_description: "Guide agents to use OpenClaw Lark plugin"
+  default_prompt: "Use $lark-openclaw-tutorial to configure OpenClaw for Feishu work."

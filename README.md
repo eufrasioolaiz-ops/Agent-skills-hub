@@ -15,7 +15,11 @@ Agent-skills-hub/
 │   │   ├── scripts/
 │   │   ├── references/
 │   │   └── requirements.txt
-│   └── lark-cli-tutorial/
+│   ├── lark-cli-tutorial/
+│   │   ├── SKILL.md
+│   │   ├── agents/openai.yaml
+│   │   └── references/
+│   └── lark-openclaw-tutorial/
 │       ├── SKILL.md
 │       ├── agents/openai.yaml
 │       └── references/
@@ -82,6 +86,7 @@ Agent-skills-hub/
 | --- | --- | --- |
 | `Lark/` | `feishu-ops` | 飞书消息、日程、任务、文档等协作事务的处理流程 |
 | `Lark/` | `lark-cli-tutorial` | 飞书 CLI 安装、授权、配置与智能体使用教程 |
+| `Lark/` | `lark-openclaw-tutorial` | OpenClaw 飞书官方插件配置与智能体使用教程 |
 | `Data/` | `data-analysis-playbook` | 数据分析任务拆解、CSV 画像、报告产出规范 |
 | `App/` | `chemical-safety` | 化工安全生产检查、隐患闭环和方案辅助 |
 | `App/` | `build-local-performance-bi` | 本地 Windows 电脑性能 BI 小浮窗生成与调试 |
