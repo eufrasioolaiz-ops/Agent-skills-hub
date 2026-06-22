@@ -1,0 +1,5 @@
+interface:
+  display_name: "Build Token BI"
+  short_description: "Create a local AI token plan BI widget"
+  default_prompt: "Use $build-token-bi to scaffold a local Token BI dashboard."
+

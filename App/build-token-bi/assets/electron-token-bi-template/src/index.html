@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOKEN BI</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="widget" aria-label="Token plan monitor">
+      <section class="glass-shell">
+        <div class="scanline"></div>
+        <div class="light-sweep"></div>
+
+        <header class="topbar drag-region">
+          <div class="brand">
+            <span class="status-dot" id="status-dot" aria-hidden="true"></span>
+            <div class="brand-copy">
+              <span class="brand-text">TOKEN BI</span>
+              <span class="brand-sub" id="sync-line">等待同步</span>
+            </div>
+          </div>
+
+          <nav class="tabs no-drag" aria-label="Token BI tabs">
+            <button class="tab is-active" type="button" data-tab="overview">总览</button>
+            <button class="tab tab-logo" type="button" data-tab="minimax" aria-label="MiniMax">
+              <span class="vendor-logo-chip vendor-minimax" aria-label="MiniMax">
+                <span class="minimax-lockup">
+                  <img class="minimax-mark" src="./assets/logos/minimax-mark.webp" alt="" aria-hidden="true" />
+                  <span class="minimax-wordmark">MINIMAX</span>
+                </span>
+              </span>
+            </button>
+            <button class="tab tab-logo" type="button" data-tab="mimo" aria-label="Xiaomi MiMo">
+              <span class="vendor-logo-chip vendor-mimo">
+                <img src="./assets/logos/mimo.png" alt="Xiaomi MiMo" />
+              </span>
+            </button>
+            <button class="tab tab-logo" type="button" data-tab="deepseek" aria-label="DeepSeek">
+              <span class="vendor-logo-chip vendor-deepseek">
+                <img src="./assets/logos/deepseek.png" alt="DeepSeek" />
+              </span>
+            </button>
+          </nav>
+
+          <div class="window-actions no-drag">
+            <button class="icon-button" id="refresh-button" type="button" title="刷新" aria-label="刷新">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20 6v5h-5"></path>
+                <path d="M4 18v-5h5"></path>
+                <path d="M18.8 9A7 7 0 0 0 6.6 6.6L4 9"></path>
+                <path d="M5.2 15a7 7 0 0 0 12.2 2.4L20 15"></path>
+              </svg>
+            </button>
+            <button class="icon-button" id="pin-button" type="button" title="置顶" aria-label="置顶">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m14 4 6 6-4 1-5 5v4l-7-7h4l5-5 1-4Z"></path>
+              </svg>
+            </button>
+            <button class="icon-button" id="minimize-button" type="button" title="最小化" aria-label="最小化">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14"></path>
+              </svg>
+            </button>
+            <button class="icon-button" id="close-button" type="button" title="关闭" aria-label="关闭">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m6 6 12 12"></path>
+                <path d="m18 6-12 12"></path>
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <section class="content">
+          <section class="panel is-active" data-panel="overview">
+            <article class="metric-card accent-blue">
+              <div class="metric-head">
+                <span class="vendor-label">
+                  <span class="vendor-logo-chip vendor-minimax">
+                    <span class="minimax-lockup">
+                      <img class="minimax-mark" src="./assets/logos/minimax-mark.webp" alt="" aria-hidden="true" />
+                      <span class="minimax-wordmark">MINIMAX</span>
+                    </span>
+                  </span>
+                  <span>5H</span>
+                </span>
+                <button type="button" data-open-platform="minimax">登录</button>
+              </div>
+              <div class="metric-value" id="overview-minimax-value">--</div>
+              <div class="metric-note" id="overview-minimax-note">5小时限额已用</div>
+            </article>
+
+            <article class="metric-card accent-green">
+              <div class="metric-head">
+                <span class="vendor-label">
+                  <span class="vendor-logo-chip vendor-mimo">
+                    <img src="./assets/logos/mimo.png" alt="Xiaomi MiMo" />
+                  </span>
+                  <span>Token Plan</span>
+                </span>
+                <button type="button" data-open-platform="mimo">登录</button>
+              </div>
+              <div class="metric-value" id="overview-mimo-value">--</div>
+              <div class="metric-note" id="overview-mimo-note">套餐用量已用</div>
+            </article>
+
+            <article class="metric-card accent-amber">
+              <div class="metric-head">
+                <span class="vendor-label">
+                  <span class="vendor-logo-chip vendor-deepseek">
+                    <img src="./assets/logos/deepseek.png" alt="DeepSeek" />
+                  </span>
+                </span>
+                <button type="button" data-open-platform="deepseek">登录</button>
+              </div>
+              <div class="metric-value compact" id="overview-deepseek-value">-- / --</div>
+              <div class="metric-note" id="overview-deepseek-note">消费 / 余额</div>
+            </article>
+          </section>
+
+          <section class="panel detail-panel" data-panel="minimax">
+            <div class="panel-title">
+              <div class="title-lockup">
+                <span class="vendor-logo-chip vendor-minimax">
+                  <span class="minimax-lockup">
+                    <img class="minimax-mark" src="./assets/logos/minimax-mark.webp" alt="" aria-hidden="true" />
+                    <span class="minimax-wordmark">MINIMAX</span>
+                  </span>
+                </span>
+                <span class="title-copy">
+                <strong>MiniMax TokenPlan</strong>
+                <span id="minimax-plan">套餐详情待同步</span>
+                </span>
+              </div>
+              <button type="button" data-open-platform="minimax">打开 MiniMax</button>
+            </div>
+
+            <div class="progress-stack">
+              <div class="progress-row">
+                <div class="progress-top">
+                  <span>5小时限额</span>
+                  <strong id="minimax-five-value">--</strong>
+                </div>
+                <div class="progress-track"><i id="minimax-five-fill"></i></div>
+                <div class="progress-note" id="minimax-five-note">刷新时间待同步</div>
+              </div>
+
+              <div class="progress-row">
+                <div class="progress-top">
+                  <span>周限额</span>
+                  <strong id="minimax-week-value">--</strong>
+                </div>
+                <div class="progress-track"><i id="minimax-week-fill"></i></div>
+                <div class="progress-note" id="minimax-week-note">刷新时间待同步</div>
+              </div>
+            </div>
+
+            <footer class="detail-footer">
+              <span id="minimax-expiry">套餐到期时间待同步</span>
+              <span class="reminder" id="minimax-reminder"></span>
+            </footer>
+          </section>
+
+          <section class="panel detail-panel" data-panel="mimo">
+            <div class="panel-title">
+              <div class="title-lockup">
+                <span class="vendor-logo-chip vendor-mimo">
+                  <img src="./assets/logos/mimo.png" alt="Xiaomi MiMo" />
+                </span>
+                <span class="title-copy">
+                <strong>MiMo Token Plan</strong>
+                <span id="mimo-plan">套餐详情待同步</span>
+                </span>
+              </div>
+              <button type="button" data-open-platform="mimo">打开 MiMo</button>
+            </div>
+
+            <div class="solo-progress">
+              <div class="progress-row">
+                <div class="progress-top">
+                  <span>套餐用量</span>
+                  <strong id="mimo-usage-value">--</strong>
+                </div>
+                <div class="progress-track"><i id="mimo-usage-fill"></i></div>
+                <div class="progress-note" id="mimo-usage-note">Token 用量待同步</div>
+              </div>
+            </div>
+
+            <footer class="detail-footer">
+              <span id="mimo-expiry">套餐到期时间待同步</span>
+              <span class="reminder" id="mimo-reminder"></span>
+            </footer>
+          </section>
+
+          <section class="panel detail-panel" data-panel="deepseek">
+            <div class="panel-title">
+              <div class="title-lockup">
+                <span class="vendor-logo-chip vendor-deepseek">
+                  <img src="./assets/logos/deepseek.png" alt="DeepSeek" />
+                </span>
+                <span class="title-copy">
+                <strong>DeepSeek 用量</strong>
+                <span id="deepseek-period">本月消费</span>
+                </span>
+              </div>
+              <button type="button" data-open-platform="deepseek">打开 DeepSeek</button>
+            </div>
+
+            <div class="money-grid">
+              <article class="money-card">
+                <span>充值余额</span>
+                <strong id="deepseek-balance">--</strong>
+              </article>
+              <article class="money-card">
+                <span>消费</span>
+                <strong id="deepseek-spend">--</strong>
+              </article>
+            </div>
+
+            <footer class="detail-footer">
+              <span id="deepseek-status">等待同步</span>
+              <span id="clock">--:--:--</span>
+            </footer>
+          </section>
+        </section>
+
+        <footer class="footer-line">
+          <span id="system-note">本地会话监控</span>
+          <span class="pulse-bars" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i>
+          </span>
+        </footer>
+      </section>
+    </main>
+    <script src="./renderer.js"></script>
+  </body>
+</html>

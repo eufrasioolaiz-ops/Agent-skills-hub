@@ -1,0 +1,24 @@
+{
+  "name": "floating-token-bi",
+  "version": "1.0.0",
+  "description": "Local floating token plan dashboard for MiniMax, MiMo, and DeepSeek",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "diagnose": "electron . --diagnose",
+    "snapshot": "electron . --snapshot",
+    "check": "node --check src/main.js && node --check src/preload.js && node --check src/renderer.js && node --check src/token-monitor.js"
+  },
+  "keywords": [
+    "electron",
+    "token-plan",
+    "desktop-widget",
+    "bi"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^42.4.0"
+  }
+}

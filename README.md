@@ -31,7 +31,13 @@ Agent-skills-hub/
     │   ├── references/
     │   ├── assets/
     │   └── requirements.txt
-    └── build-local-performance-bi/
+    ├── build-local-performance-bi/
+    │   ├── SKILL.md
+    │   ├── agents/openai.yaml
+    │   ├── scripts/
+    │   ├── references/
+    │   └── assets/
+    └── build-token-bi/
         ├── SKILL.md
         ├── agents/openai.yaml
         ├── scripts/
@@ -74,6 +80,7 @@ Agent-skills-hub/
 | `Data/` | `data-analysis-playbook` | 数据分析任务拆解、CSV 画像、报告产出规范 |
 | `App/` | `chemical-safety` | 化工安全生产检查、隐患闭环和方案辅助 |
 | `App/` | `build-local-performance-bi` | 本地 Windows 电脑性能 BI 小浮窗生成与调试 |
+| `App/` | `build-token-bi` | 本地 AI 服务 Token 套餐与余额 BI 小浮窗 |
 
 ## 新增技能流程
 
