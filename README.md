@@ -44,6 +44,12 @@ Agent-skills-hub/
     │   ├── references/
     │   ├── assets/
     │   └── requirements.txt
+    ├── apple-html-template/
+    │   ├── SKILL.md
+    │   ├── agents/openai.yaml
+    │   ├── scripts/
+    │   ├── references/
+    │   └── assets/
     ├── build-local-performance-bi/
     │   ├── SKILL.md
     │   ├── agents/openai.yaml
@@ -95,6 +101,7 @@ Agent-skills-hub/
 | `Office/` | `sanning-html-report-template` | 三宁统一视觉的响应式 HTML/H5 汇报页面与交互演示稿模板 |
 | `Data/` | `data-analysis-playbook` | 数据分析任务拆解、CSV 画像、报告产出规范 |
 | `App/` | `chemical-safety` | 化工安全生产检查、隐患闭环和方案辅助 |
+| `App/` | `apple-html-template` | 原创玻璃质感、深浅主题与响应式产品展示页生成模板 |
 | `App/` | `build-local-performance-bi` | 本地 Windows 电脑性能 BI 小浮窗生成与调试 |
 | `App/` | `build-token-bi` | 本地 AI 服务 Token 套餐与余额 BI 小浮窗 |
 

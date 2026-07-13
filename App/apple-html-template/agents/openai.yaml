@@ -1,0 +1,4 @@
+interface:
+  display_name: "Apple HTML 产品模板"
+  short_description: "生成原创玻璃质感产品展示页，含内嵌素材、深浅主题与响应式布局"
+  default_prompt: "Use $apple-html-template to create an original glassmorphism product page from my brief."
