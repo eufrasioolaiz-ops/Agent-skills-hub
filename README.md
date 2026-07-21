@@ -24,6 +24,11 @@ Agent-skills-hub/
 │       ├── agents/openai.yaml
 │       └── references/
 ├── Office/
+│   ├── html-auto38/
+│   │   ├── SKILL.md
+│   │   ├── agents/openai.yaml
+│   │   ├── scripts/
+│   │   └── references/
 │   └── sanning-html-report-template/
 │       ├── SKILL.md
 │       ├── agents/openai.yaml
@@ -98,6 +103,7 @@ Agent-skills-hub/
 | `Lark/` | `feishu-ops` | 飞书消息、日程、任务、文档等协作事务的处理流程 |
 | `Lark/` | `lark-cli-tutorial` | 飞书 CLI 安装、授权、配置与智能体使用教程 |
 | `Lark/` | `lark-openclaw-tutorial` | OpenClaw 飞书官方插件配置与智能体使用教程 |
+| `Office/` | `html-auto38` | 从 32 个精选模板生成中文友好的 HTML 演示稿、汇报页和研究报告 |
 | `Office/` | `sanning-html-report-template` | 三宁统一视觉的响应式 HTML/H5 汇报页面与交互演示稿模板 |
 | `Data/` | `data-analysis-playbook` | 数据分析任务拆解、CSV 画像、报告产出规范 |
 | `App/` | `chemical-safety` | 化工安全生产检查、隐患闭环和方案辅助 |

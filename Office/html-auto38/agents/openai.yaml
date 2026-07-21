@@ -1,0 +1,4 @@
+interface:
+  display_name: "HTML Auto 38"
+  short_description: "从 32 个模板生成中文友好的 HTML 演示稿"
+  default_prompt: "Use $html-auto38 to create a Chinese-friendly HTML presentation deck from a matching template."
